@@ -1,0 +1,28 @@
+div{
+  width: 200px;
+  height:200px;
+  -webkit-animation: blue-to-red 2s 1s infinite linear alternate,
+  change-shape 2s 1s infinite cubic-bezier(0.550, 0.055, 0.675, 0.190) alternate;
+}
+
+@keyframes blue-to-red{
+  0%{
+    background-color: blue;
+  }
+  100%{
+    background-color: red;
+  }
+}
+
+@keyframes change-shape{
+  to{
+    border-radius: 0 0 0 0;
+    opacity: 1;
+    transform:rotate(0deg);
+  }
+  from{
+    border-radius: 50% 50% 50% 50%;
+    opacity: 0;
+    transform:rotate(180deg);
+  }
+}

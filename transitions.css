@@ -1,0 +1,141 @@
+.ease{
+  width: 50px;
+  height:50px;
+  -webkit-animation: blue-to-red 2s 1s infinite linear alternate,
+  change-shape 2s 1s infinite cubic-bezier(0.550, 0.055, 0.675, 0.190) alternate,
+  move-to-the-left 10s 1s infinite cubic-bezier(0.250, 0.100, 0.250, 1.000) alternate ;
+}
+
+.ease-in{
+  width: 50px;
+  height:50px;
+  -webkit-animation: blue-to-red 2s 1s infinite linear alternate,
+  change-shape 2s 1s infinite cubic-bezier(0.550, 0.055, 0.675, 0.190) alternate,
+  move-to-the-left 10s 1s infinite cubic-bezier(0.250, 0.100, 0.250, 1.000) alternate ;
+}
+
+.ease-out{
+  width: 50px;
+  height:50px;
+  -webkit-animation: blue-to-red 2s 1s infinite linear alternate,
+  change-shape 2s 1s infinite cubic-bezier(0.550, 0.055, 0.675, 0.190) alternate,
+  move-to-the-left 10s 1s infinite cubic-bezier(0.000, 0.000, 0.580, 1.000) alternate ;
+}
+
+.ease-in-out{
+  width: 50px;
+  height: 50px;
+  -webkit-animation: blue-to-red 2s 1s infinite linear alternate,
+  change-shape 2s 1s infinite cubic-bezier(0.550, 0.055, 0.675, 0.190) alternate,
+  move-to-the-left 10s 1s infinite cubic-bezier(0.420, 0.000, 0.580, 1.000) alternate ;
+}
+.linear{
+    width: 50px;
+    height: 50px;
+    -webkit-animation: blue-to-red 2s 1s infinite linear alternate,
+    change-shape 2s 1s infinite cubic-bezier(0.550, 0.055, 0.675, 0.190) alternate,
+    move-to-the-left 10s 1s infinite linear alternate ;
+}
+.ease-in-quad{
+  width: 50px;
+  height: 50px;
+  -webkit-animation: blue-to-red 2s 1s infinite linear alternate,
+  change-shape 2s 1s infinite cubic-bezier(0.550, 0.055, 0.675, 0.190) alternate,
+  move-to-the-left 10s 1s infinite cubic-bezier(0.550, 0.085, 0.680, 0.530) alternate ;
+}
+.ease-in-cubic{
+  width: 50px;
+  height: 50px;
+  -webkit-animation: blue-to-red 2s 1s infinite linear alternate,
+  change-shape 2s 1s infinite cubic-bezier(0.550, 0.055, 0.675, 0.190) alternate,
+  move-to-the-left 10s 1s infinite cubic-bezier(0.550, 0.055, 0.675, 0.190) alternate ;
+}
+.ease-in-quart{
+  width: 50px;
+  height: 50px;
+  -webkit-animation: blue-to-red 2s 1s infinite linear alternate,
+  change-shape 2s 1s infinite cubic-bezier(0.550, 0.055, 0.675, 0.190) alternate,
+  move-to-the-left 10s 1s infinite cubic-bezier(0.895, 0.030, 0.685, 0.220) alternate ;
+}
+
+
+
+@keyframes blue-to-red{
+  0%{
+    background-color: blue;
+  }
+  25%{
+    background-color: orange;
+  }
+  50%{
+    background-color: yellow;
+  }
+  75%{
+    background-color: green;
+  }
+  100%{
+    background-color: red;
+  }
+}
+
+@keyframes change-shape{
+  0%{
+    border-radius: 0 0 0 0;
+    opacity: 1;
+    transform:rotate(0deg);
+  }
+  25%{
+    border-radius: 0 0 0 50%;
+    transform:rotate(45deg);
+  }
+  50%{
+    border-radius: 0 50% 0 50%;
+    transform:rotate(90deg);
+  }
+  75%{
+    border-radius: 0 50% 50% 50%;
+    transform:rotate(135deg);
+  }
+  100%{
+    border-radius: 50% 50% 50% 50%;
+    opacity: .1;
+    transform:rotate(180deg);
+  }
+}
+
+@keyframes move-to-the-left{
+  0%{
+    transform:translateX(100px);
+  }
+  10%{
+    transform:translateX(200px);
+  }
+  20%{
+    transform:translateX(300px);
+  }
+  30%{
+    transform:translateX(400px);
+  }
+  40%{
+    transform:translateX(500px);
+  }
+  50%{
+    transform:translateX(600px);
+  }
+  60%{
+    transform:translateX(700px);
+  }
+  70%{
+    transform:translateX(800px);
+  }
+  80%{
+    transform:translateX(900px);
+  }
+  90%{
+    transform:translateX(1000px);
+  }
+  100%{
+    transform:translateX(1100px);
+  }
+
+}
