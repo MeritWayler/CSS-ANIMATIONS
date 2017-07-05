@@ -5,6 +5,15 @@ div{
   change-shape 2s 1s infinite cubic-bezier(0.550, 0.055, 0.675, 0.190) alternate;
 }
 
+button{
+  background: white;
+  transition: background 0.5s linear;
+}
+
+button:hover{
+  background: green;
+}
+
 @keyframes blue-to-red{
   0%{
     background-color: blue;
