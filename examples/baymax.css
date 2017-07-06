@@ -4,3 +4,37 @@ body{
   background-repeat: no-repeat;
   height: 100vh;
 }
+
+.baymax{
+  border-bottom: 1.5em solid #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, -40%);
+}
+
+.baymax::after{
+  background: #000;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  width: 12em;
+  height: 12em;
+  left: -9em;
+  top: -6em;
+  transform: skewX(-4deg);
+  transform: translate(400%, 0%);
+}
+
+.baymax::before {
+  background: #000;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  width: 12em;
+  height: 12em;
+  left: -9em;
+  top: -6em;
+  transform: skewX(-4deg);
+}
